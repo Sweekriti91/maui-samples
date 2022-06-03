@@ -31,6 +31,10 @@ The WeatherTwentyOne project is a multi-targeted SDK project that can run on And
 
 ![run menu](images/run-static-profiles.png)
 
+## DevOps 
+
+To learn more about DevOps pipelines setup for this project in Azure Devops as well as GitHub actions checkout [DevOps ReadME](devops/devops.md).
+
 ## Additional Resources
 
 https://docs.microsoft.com/dotnet/maui
