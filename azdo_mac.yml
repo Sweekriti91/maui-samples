@@ -33,16 +33,16 @@ stages:
           dotnet workload install android ios maccatalyst tvos macos maui wasm-tools --source https://api.nuget.org/v3/index.json
     
      # https://docs.microsoft.com/en-us/azure/devops/pipelines/apps/mobile/app-signing?view=azure-devops&tabs=apple-install-during-build#sign-your-apple-ios-macos-tvos-or-watchos-app
-    - task: InstallAppleCertificate@2
-      inputs:
-        certSecureFile: 'SweekyDevCert.p12'
-        certPwd: '$(iOSCertPassword)'
-        keychain: 'temp'
+    # - task: InstallAppleCertificate@2
+    #   inputs:
+    #     certSecureFile: 'SweekyDevCert.p12'
+    #     certPwd: '$(iOSCertPassword)'
+    #     keychain: 'temp'
 
-    - task: InstallAppleProvisioningProfile@1
-      inputs:
-        provisioningProfileLocation: 'secureFiles'
-        provProfileSecureFile: 'VS_WildCard_Development.mobileprovision'
+    # - task: InstallAppleProvisioningProfile@1
+    #   inputs:
+    #     provisioningProfileLocation: 'secureFiles'
+    #     provProfileSecureFile: 'VS_WildCard_Development.mobileprovision'
     
     - task: Bash@3
       displayName: Restore nuget
