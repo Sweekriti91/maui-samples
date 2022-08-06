@@ -54,14 +54,13 @@ stages:
 
     # https://docs.microsoft.com/en-us/dotnet/maui/macos/deployment/overview
     - task: Bash@3
-      displayName: Build MacCatalyst & iOS App
+      displayName: Build MacCatalyst App
       inputs:
         targetType: 'inline'
         script: |
           cd 6.0/Apps/WeatherTwentyOne/src
           dotnet build -f net6.0-maccatalyst -c Release -o ./artifacts
           dotnet publish -f net6.0-maccatalyst -c Release -p:BuildIpa=True -o ./artifacts
-          dotnet publish -f net6.0-ios -c Release
 
     - task: Bash@3
       displayName: Build and Run Tests
@@ -84,8 +83,7 @@ stages:
         Contents: |
           **/**/6.0/Apps/WeatherTwentyOne/src/artifacts/**/*.pkg
           6.0/Apps/WeatherTwentyOne/src/artifacts/**/*.pkg
-          **/*.app
-          **/*.ipa
+
         TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
     - task: PublishBuildArtifacts@1
