@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31220.234
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32728.150
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherTwentyOne", "WeatherTwentyOne\WeatherTwentyOne.csproj", "{07CD65EF-6238-4365-AF5D-F6D433967F48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherTwentyOne.UnitTests", "WeatherTwentyOne.UnitTests\WeatherTwentyOne.UnitTests.csproj", "{EC0EB5EA-EF2E-4572-888F-17EB2D8EC0F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherDataService", "WeatherDataService\WeatherDataService.csproj", "{6C9461E8-2DFF-41B5-AE9B-D684E44D319E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,6 +21,14 @@ Global
 		{07CD65EF-6238-4365-AF5D-F6D433967F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07CD65EF-6238-4365-AF5D-F6D433967F48}.Release|Any CPU.Build.0 = Release|Any CPU
 		{07CD65EF-6238-4365-AF5D-F6D433967F48}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EC0EB5EA-EF2E-4572-888F-17EB2D8EC0F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0EB5EA-EF2E-4572-888F-17EB2D8EC0F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0EB5EA-EF2E-4572-888F-17EB2D8EC0F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC0EB5EA-EF2E-4572-888F-17EB2D8EC0F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C9461E8-2DFF-41B5-AE9B-D684E44D319E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C9461E8-2DFF-41B5-AE9B-D684E44D319E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C9461E8-2DFF-41B5-AE9B-D684E44D319E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C9461E8-2DFF-41B5-AE9B-D684E44D319E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

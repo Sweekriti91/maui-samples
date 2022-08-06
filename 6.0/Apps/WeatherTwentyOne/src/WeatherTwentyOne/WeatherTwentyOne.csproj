@@ -65,6 +65,10 @@
 	  </Content>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\WeatherDataService\WeatherDataService.csproj" />
+	</ItemGroup>
+
    <ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadGenericExceptionInfoBarWeatherTwentyOneHideInfoBar="True" /></VisualStudio></ProjectExtensions>
 
 </Project>

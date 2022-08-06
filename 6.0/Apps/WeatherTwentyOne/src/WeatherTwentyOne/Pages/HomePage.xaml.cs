@@ -1,8 +1,9 @@
 ﻿using System.Diagnostics;
 using Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;
-using WeatherTwentyOne.Services;
+using WeatherDataService.Services;
 using WeatherTwentyOne.ViewModels;
 using Application = Microsoft.Maui.Controls.Application;
+using ServiceProvider = WeatherDataService.Services.ServiceProvider;
 using WindowsConfiguration = Microsoft.Maui.Controls.PlatformConfiguration.Windows;
 
 namespace WeatherTwentyOne.Pages;

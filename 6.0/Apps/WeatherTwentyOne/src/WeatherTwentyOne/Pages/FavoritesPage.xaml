@@ -2,7 +2,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:v="clr-namespace:WeatherTwentyOne.Views"
              xmlns:m="clr-namespace:WeatherTwentyOne.Models"
-             xmlns:c="clr-namespace:WeatherClient2021"
+             xmlns:c="clr-namespace:WeatherDataService.Services;assembly=WeatherDataService"
              xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
              ios:Page.UseSafeArea="True"
              Title="Favorites"

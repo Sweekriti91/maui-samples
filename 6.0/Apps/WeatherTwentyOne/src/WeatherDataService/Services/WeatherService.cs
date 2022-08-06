@@ -1,6 +1,6 @@
 ﻿using System.Net.Http.Json;
 
-namespace WeatherClient2021;
+namespace WeatherDataService.Services;
 
 public class WeatherService : IWeatherService
 {

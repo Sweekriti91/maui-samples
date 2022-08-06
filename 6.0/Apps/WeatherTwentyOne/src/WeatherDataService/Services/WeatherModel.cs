@@ -1,4 +1,4 @@
-﻿namespace WeatherClient2021;
+﻿namespace WeatherDataService.Services;
 
 public class WeatherResponse
 {

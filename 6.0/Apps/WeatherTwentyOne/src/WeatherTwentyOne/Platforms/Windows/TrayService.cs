@@ -1,6 +1,6 @@
 ﻿using Hardcodet.Wpf.TaskbarNotification.Interop;
 using Microsoft.UI.Xaml;
-using WeatherTwentyOne.Services;
+using WeatherDataService.Services;
 
 namespace WeatherTwentyOne.WinUI;
 

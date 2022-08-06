@@ -1,8 +1,8 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using WeatherClient2021;
-using Location = WeatherClient2021.Location;
+using WeatherDataService.Services;
+using Location = WeatherDataService.Services.Location;
 
 namespace WeatherTwentyOne.ViewModels;
 

@@ -1,5 +1,5 @@
 ﻿using Microsoft.Toolkit.Uwp.Notifications;
-using WeatherTwentyOne.Services;
+using WeatherDataService.Services;
 
 namespace WeatherTwentyOne.WinUI;
 

@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using WeatherTwentyOne.Models;
+using Temperature = WeatherTwentyOne.Models.Temperature;
 
 namespace WeatherTwentyOne.ViewModels;
 

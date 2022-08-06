@@ -1,4 +1,4 @@
-﻿namespace WeatherTwentyOne;
+﻿namespace WeatherDataService.Services;
 
 public static class ServiceProvider
 {

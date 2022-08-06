@@ -1,4 +1,4 @@
-﻿namespace WeatherTwentyOne.Services;
+﻿namespace WeatherDataService.Services;
 
 public interface INotificationService
 {

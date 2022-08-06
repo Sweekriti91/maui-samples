@@ -1,7 +1,7 @@
 ﻿using System.Runtime.InteropServices;
 using Foundation;
 using ObjCRuntime;
-using WeatherTwentyOne.Services;
+using WeatherDataService.Services;
 
 namespace WeatherTwentyOne.MacCatalyst;
 

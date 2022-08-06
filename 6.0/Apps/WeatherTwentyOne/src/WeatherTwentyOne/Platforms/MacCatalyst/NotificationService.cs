@@ -1,5 +1,5 @@
 using UserNotifications;
-using WeatherTwentyOne.Services;
+using WeatherDataService.Services;
 
 namespace WeatherTwentyOne.MacCatalyst;
 
