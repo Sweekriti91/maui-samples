@@ -121,11 +121,20 @@ jobs:
         #   shell: bash
         #   run: jarsigner -keystore android/release.decrypted.jks -storepass "${{ secrets.RELEASE_KEYSTORE_PASSWORD }}" -signedjar ./android/app/build/outputs/bundle/release/app-release-signed.aab ./android/app/build/outputs/bundle/release/app-release.aab release
 
-  #       - name: Build and Run UnitTests
-  #         shell: bash
-  #         run: |
-  #           dotnet build <path to unit test csproj>
-  #           dotnet test <path to unit test csproj> --no-build --verbosity normal
+        - name: Build and Run UnitTests
+          shell: bash
+          run: |
+            cd 6.0\Apps\WeatherTwentyOne\src\WeatherTwentyOne.UnitTests
+            dotnet build
+            dotnet test --logger:"nunit;LogFilePath=results\test-result.xml"
+
+        # https://github.com/marketplace/actions/testforest-dashboard      
+        - name: Create test summary
+          uses: test-summary/action@dist
+          with:
+            paths: results/**/*.xml
+          if: always()
+
 
         - uses: actions/upload-artifact@v2
           with:

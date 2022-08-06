@@ -63,6 +63,22 @@ stages:
           dotnet publish -f net6.0-maccatalyst -c Release -p:BuildIpa=True -o ./artifacts
           dotnet publish -f net6.0-ios -c Release
 
+    - task: Bash@3
+      displayName: Build and Run Tests
+      inputs:
+        targetType: 'inline'
+        script: |
+          cd 6.0\Apps\WeatherTwentyOne\src\WeatherTwentyOne.UnitTests
+          dotnet build
+          dotnet test --logger:"nunit;LogFilePath=results\test-result.xml"
+
+    - task: PublishTestResults@2
+      inputs:
+        testResultsFormat: 'VSTest'
+        testResultsFiles: '**/results/**/*.xml'
+        testRunTitle: 'Services Test'
+      condition: always()
+
     - task: CopyFiles@2
       inputs:
         Contents: |
