@@ -57,12 +57,12 @@ stages:
         script: |
           cd 6.0/Apps/WeatherTwentyOne/src/WeatherTwentyOne.UnitTests
           dotnet build
-          dotnet test --logger:"nunit;LogFilePath=test-result.xml"
+          dotnet test --logger:"trx;logfilename=testResults.trx"
 
     - task: PublishTestResults@2
       inputs:
         testResultsFormat: 'VSTest'
-        testResultsFiles: '**/**/*.xml'
+        testResultsFiles: '**/**/*.trx'
         testRunTitle: 'Services Test'
       condition: always()
       
