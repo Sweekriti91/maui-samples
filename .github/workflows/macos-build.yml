@@ -58,7 +58,7 @@ jobs:
       - name: Create test summary
         uses: test-summary/action@dist
         with:
-          paths: **/*.xml
+          paths: results/**/*.xml
         if: always()
 
       - uses: actions/upload-artifact@v2
