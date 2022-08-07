@@ -62,7 +62,7 @@ stages:
     - task: PublishTestResults@2
       inputs:
         testResultsFormat: 'VSTest'
-        testResultsFiles: '/**/*.xml'
+        testResultsFiles: '**/**/*.xml'
         testRunTitle: 'Services Test'
       condition: always()
       
