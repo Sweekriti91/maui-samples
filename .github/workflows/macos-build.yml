@@ -43,7 +43,7 @@ jobs:
       - name : Build MacCatalyst App
         shell: bash
         run: |
-          cd 6.0/Apps/WeatherTwentyOne/src
+          cd 6.0/Apps/WeatherTwentyOne/src/WeatherTwentyOne
           dotnet build -f net6.0-maccatalyst -c Release -o ./artifacts
           dotnet publish -f net6.0-maccatalyst -c Release -p:BuildIpa=True -o ./artifacts
 

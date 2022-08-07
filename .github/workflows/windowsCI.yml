@@ -104,7 +104,7 @@ jobs:
         - name : Build Android App
           shell: bash
           run: |
-            cd 6.0/Apps/WeatherTwentyOne/src
+            cd 6.0/Apps/WeatherTwentyOne/src/WeatherTwentyOne
             dotnet publish -f:net6.0-android -c:Release
             
         # # Store Android Signing Keystore and password in Secrets using base64 encoding
