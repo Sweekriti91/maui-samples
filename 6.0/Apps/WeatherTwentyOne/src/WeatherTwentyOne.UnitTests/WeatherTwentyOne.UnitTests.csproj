@@ -4,7 +4,7 @@
     <TargetFrameworks>net6.0;net6.0-android;net6.0-maccatalyst</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
+	  <ApplicationId>com.companyname.WeatherUnitTest</ApplicationId>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
