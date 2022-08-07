@@ -126,13 +126,13 @@ jobs:
           run: |
             cd 6.0/Apps/WeatherTwentyOne/src/WeatherTwentyOne.UnitTests
             dotnet build
-            dotnet test --logger:"nunit;LogFilePath=results\test-result.xml"
+            dotnet test --logger:"nunit;LogFilePath=results/test-result.xml"
 
         # https://github.com/marketplace/actions/testforest-dashboard      
         - name: Create test summary
           uses: test-summary/action@dist
           with:
-            paths: results/**/*.xml
+            paths: cd 6.0/Apps/WeatherTwentyOne/src/WeatherTwentyOne.UnitTests/results/**/*.xml
           if: always()
 
 
